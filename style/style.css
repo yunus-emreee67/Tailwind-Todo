@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    color: #FDD692;
+   
+}
+
+.form-control::placeholder{
+    font-family: 'Ubuntu', sans-serif;
+    color: #FDD692;
+    padding-left: 0.75rem;
+}
+
+.bg-coffee{
+    background-color: #754F44;
+}
+.bg-flise{
+    background-color: #EC7357;
+}
+
+.bg-light-ylw{
+    background-color: #FBFFB9;
+}
+.strong{
+    color: #754F44;
+}

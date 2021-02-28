@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style/dist/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-coffee ">
+    <div class="container  box-border	">
+      <div class="card grid  ml-48 grid-cols-3 w-full	">
+        <div class="card-header bg-flise h-12 py-3 text-center uppercase  rounded-t-lg px-3 mt-28 col-start-2">Todo List</div>
+        <div class="card-body    mt-12  col-start-2 ">
+          <form name="form" class="" id="todo-form">
+            <div class="form-row ">
+              <div class="form-group ">
+                <input 
+                  type="text"
+                  name="todo"
+                  id="todo"
+                  placeholder="Bir Todo Girin"
+                  class="form-control outline-none  text-center h-12 rounded-b-lg bg-flise w-full h-7"
+                />
+              </div>
+            </div>
+            <button class="bg-flise rounded-full focus:outline-none h-7 capitalize  text-sm  w-32 mt-6"type="submit">todo ekleyin <i class="fas pl-3 fa-plus"></i></button>
+          </form>
+        
+        </div>
+        <div class="card-body     col-start-2">
+          <hr class="my-6"/>
+          <h5 class="card-title bg-flise h-12 py-3 text-center uppercase  rounded-t-lg px-3  my-5" id="tasks-title">Todolar</h5>
+          <div class="form-row">
+            <div class="form-group ">
+              <input
+                type="text"
+                class="form-control outline-none  text-center h-12 rounded-b-lg bg-flise w-full h-7 w-64 h-7"
+                name="filter"
+                id="filter"
+                placeholder="Todo Arayın"
+              />
+            </div>
+          </div>
+          <hr class="my-6" />
+          <ul class="list-group w-full">
+            <!-- <li class="list-group-item bg-flise h-12 py-3 text-center uppercase  rounded-t-lg px-3  ">
+              todo
+              <a href="#" class="delete-item ">
+                <i class="fas fa-trash-alt pl-3"></i>
+              </a>
+            </li>  
+            <li class="list-group-item bg-flise h-12 py-3 text-center uppercase my-3 rounded-b-lg px-3  ">
+              todo
+              <a href="#" class="delete-item ">
+                <i class="fas fa-trash-alt pl-3"></i>
+              </a>
+            </li>  -->
+          </ul>
+          <hr class="my-6"/>
+          <a href="#" class="bg-flise rounded-full h-7 capitalize py-1 pl-3 text-sm block w-44 mt-6" id="clear-todos">Taskları Temizleyin  <i class="fas fa-dumpster pl-3"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>
